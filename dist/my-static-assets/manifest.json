@@ -1,0 +1,32 @@
+{
+    "name": "Beesline",
+    "short_name": "Beesline",
+    "start_url": "/",
+    "theme_color": "#000000",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Beesline is an independent company fully owned by Lebanese entrepreneurs.",
+    "icons": [
+        {
+            "src": "/my-static-assets/icons/bee_circle_144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/my-static-assets/icons/bee_circle_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/my-static-assets/icons/bee_circle_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/my-static-assets/icons/bee_maskable_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

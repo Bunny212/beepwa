@@ -1,0 +1,12 @@
+/*! @version pwa-studio: 0.0.1, @magento/venia-ui: ~10.0.0, @magento/venia-sample-payments-checkmo: ^0.0.12, @magento/upward-security-headers: ^1.0.14, @magento/pwa-theme-venia: ~1.4.0, @magento/pwa-buildpack: ^11.4.1, @magento/peregrine: ~13.0.0, @magento/pagebuilder: ~8.0.0, @magento/eslint-config: ~1.5.0, @magento/babel-preset-peregrine: ~1.2.2, @apollo/client: ~3.5.0 */
+(window.webpackJsonp=window.webpackJsonp||[]).push([[92],{"11ys":function(t,e,n){"use strict"
+var a=n("JPst"),r=n.n(a)()(function(t){return t[1]})
+r.push([t.i,".getSupportArticle-root-2mq {\n    /* TODO @TW: review (B7) */\n}\n.getSupportArticle-pageTitle-Sgx {\n    color: #000;\n    font-family: Roobert;\n    font-size: 18px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 110%; /* 19.8px */\n    margin-top: 0;\n    text-transform: capitalize;\n}\n.getSupportArticle-richContent-X4V * {\n    color: #000;\n    font-family: Roobert;\n    font-size: 14px;\n    font-style: normal;\n}",""]),r.locals={root:"getSupportArticle-root-2mq gap-xs grid grid-cols-1 max-w-screen-lg mx-auto my-0 px-sm py-sm lg_gap-md lg_grid-cols-[2fr, 1fr] lg_px-lg lg_py-md",pageTitle:"getSupportArticle-pageTitle-Sgx",richContent:"getSupportArticle-richContent-X4V"},e.a=r},Bx5F:function(t,e,n){"use strict"
+n.r(e)
+var a=n("q1tI"),r=n.n(a),o=n("y1Xp"),i=n("Ty5D"),l=n("LboF"),c=n.n(l),s=n("11ys"),p={injectType:"singletonStyleTag",insert:"head",singleton:!0},g=(c()(s.a,p),s.a.locals||{}),m=n("STDB"),u=n("Gqia"),x=n("eazH"),f=n("jsp6")
+e.default=(t=>{var e=Object(o.a)(g,t.classes),n=Object(i.h)(),{articleTitle:l}=n.state||{},{articleContent:c}=n.state||{},{incrementId:s}=n.state||{},p=c?r.a.createElement(m.a,{html:c}):null,d=r.a.createElement(a.Fragment,null,r.a.createElement(f.a,{src:x.a}),r.a.createElement(u.a,{sx:{mt:4,mb:2},className:e.pageTitle,component:"div"},l),r.a.createElement("div",{className:e.richContent},p))
+return r.a.createElement("div",{className:e.root},d)})},eazH:function(t,e,n){"use strict"
+e.a=n.p+"getSupportIcon-2Jo.svg"},jsp6:function(t,e,n){"use strict"
+var a=n("q1tI"),r=n.n(a),o=n("NZDO")
+e.a=(t=>{var{src:e}=t
+return r.a.createElement(o.a,{sx:{display:"flex",flexDirection:"row",justifyContent:"center",alignItems:"center",width:"76.621px",height:"78.189px",flexShrink:0,borderRadius:"12px",background:"#FFF",boxShadow:"0px 0px 16px 0px rgba(0, 0, 0, 0.12)",marginBottom:"10px"}},r.a.createElement("img",{src:e,alt:"Icon"}))})}}])

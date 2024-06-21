@@ -1,0 +1,12 @@
+/*! @version pwa-studio: 0.0.1, @magento/venia-ui: ~10.0.0, @magento/venia-sample-payments-checkmo: ^0.0.12, @magento/upward-security-headers: ^1.0.14, @magento/pwa-theme-venia: ~1.4.0, @magento/pwa-buildpack: ^11.4.1, @magento/peregrine: ~13.0.0, @magento/pagebuilder: ~8.0.0, @magento/eslint-config: ~1.5.0, @magento/babel-preset-peregrine: ~1.2.2, @apollo/client: ~3.5.0 */
+(window.webpackJsonp=window.webpackJsonp||[]).push([[90],{"0Ejz":function(e,t,n){"use strict"
+t.a=n.p+"bi_question_circle-9Ht.svg"},"2qsi":function(e,t,n){"use strict"
+n.r(t)
+var a=n("q1tI"),r=n.n(a),i=n("y1Xp"),o=n("Ty5D"),l=n("LboF"),c=n.n(l),s=n("dyeK"),p={injectType:"singletonStyleTag",insert:"head",singleton:!0},m=(c()(s.a,p),s.a.locals||{}),g=n("STDB"),f=n("Gqia"),d=n("0Ejz"),x=n("Z46h")
+t.default=(e=>{var t=Object(i.a)(m,e.classes),n=Object(o.h)(),{articleTitle:l}=n.state||{},{articleContent:c}=n.state||{},s=(c&&g.a,r.a.createElement(a.Fragment,null,r.a.createElement(x.a,{src:d.a}),r.a.createElement(f.a,{sx:{mt:4,mb:2},className:t.pageTitle,component:"div"},l),r.a.createElement("div",{className:t.richContent},r.a.createElement("div",{dangerouslySetInnerHTML:{__html:c}}))))
+return r.a.createElement("div",{className:t.root},s)})},Z46h:function(e,t,n){"use strict"
+var a=n("q1tI"),r=n.n(a),i=n("NZDO")
+t.a=(e=>{var{src:t}=e
+return r.a.createElement(i.a,{sx:{display:"flex",flexDirection:"row",justifyContent:"center",alignItems:"center",width:"76.621px",height:"78.189px",flexShrink:0,borderRadius:"12px",background:"#FFF",boxShadow:"0px 0px 16px 0px rgba(0, 0, 0, 0.12)",marginBottom:"10px"}},r.a.createElement("img",{src:t,alt:"Icon"}))})},dyeK:function(e,t,n){"use strict"
+var a=n("JPst"),r=n.n(a)()(function(e){return e[1]})
+r.push([e.i,".faqArticle-root-gN8 {\n    /* TODO @TW: review (B7) */\n}\n.faqArticle-pageTitle-AdN {\n    color: #000;\n    font-family: Roobert;\n    font-size: 18px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 110%; /* 19.8px */\n    margin-top: 0;\n    text-transform: capitalize;\n}\n.faqArticle-richContent-Ad7 * {\n    color: #000;\n    font-family: Roobert;\n    font-size: 14px;\n    font-style: normal;\n}",""]),r.locals={root:"faqArticle-root-gN8 gap-xs grid grid-cols-1 max-w-screen-lg mx-auto my-0 px-sm py-sm lg_gap-md lg_grid-cols-[2fr, 1fr] lg_px-lg lg_py-md",pageTitle:"faqArticle-pageTitle-AdN",richContent:"faqArticle-richContent-Ad7"},t.a=r}}])
