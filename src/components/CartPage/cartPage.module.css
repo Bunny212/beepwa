@@ -1,0 +1,128 @@
+.root {
+    composes: gap-xs from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+    padding-bottom: 20px;
+}
+
+.body {
+    composes: grid from global;
+    composes: gap-md from global;
+    grid-template-columns: 1fr 18rem;
+    /* The summary grid item spans the entire right column. */
+    grid-template-areas:
+        'items summary'
+        'adjustments summary';
+}
+
+.heading_container {
+    composes: gap-y-xs from global;
+    composes: grid from global;
+    composes: mb-xs from global;
+}
+
+.heading {
+    composes: leading-tight from global;
+    display: none;
+}
+
+.stockStatusMessageContainer > * {
+    font-size: 12px;
+    border: none;
+    text-align: center;
+}
+
+/* TODO @TW: cannot compose */
+.stockStatusMessageContainer:empty {
+    display: none;
+}
+
+.items_container {
+    grid-area: items;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+.items_containerr {
+    grid-area: items;
+}
+.price_adjustments_container {
+    grid-area: adjustments;
+}
+
+.summary_container {
+    composes: h-full from global;
+    grid-area: summary;
+}
+
+.summary_contents {
+    composes: sticky from global;
+    /*
+     * TODO: Use CSS Properties (variables) or something instead of hardcoding this.
+     *  - 3.5rem = min-height of nav header. See the "toolbar" class in header.css.
+     *  - 2rem = padding-top of the cart page.
+     */
+    composes: top-[5.5rem] from global; /* TODO @TW: review */
+}
+
+@media (max-width: 959px) {
+    .body {
+        /* Only one column in mobile view. */
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'items'
+            'adjustments'
+            'summary';
+    }
+}
+
+.emptyCartNotice {
+    display: flex;
+    height: 69px;
+    padding: 6px 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--bees-yellow, #FFC629);
+    color: var(--black, #000);
+    font-size: 11px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.5px;
+}
+.listItemButton {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 12px !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    min-height: 100px;
+}
+.fullBtn {
+    background: #FFC629;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    width: 100%;
+    color: #000 !important;
+    text-transform: capitalize !important;
+    height: 46px;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+.fullBtn:hover {
+    background-color: #FFC629;
+}

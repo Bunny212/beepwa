@@ -1,0 +1,93 @@
+.root {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+}
+.root input {
+    display: flex !important;
+    height: 55px !important;
+    padding: 0px 10px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 9.863px !important;
+    border-radius: 9.104px !important;
+    background: #FFF !important;
+    box-shadow: 0px 0px 12.139005661010742px 0px rgba(0, 0, 0, 0.12) !important;
+    border-color: transparent !important;
+}
+.title {
+    color: #000;
+    font-family: Roobert;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.5px;
+    letter-spacing: -1.44px;
+    margin-bottom: 18px;
+}
+.topLabel {
+    color: #181717;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 242.857% */
+}
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 9.104px !important;
+    background: #FFF !important;
+    box-shadow: 0px 0px 12.139005661010742px 0px rgba(0, 0, 0, 0.12) !important;
+    border-color: transparent !important;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.inputBox input {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    border-radius: 0 !important;
+    color: #000;
+    font-family: Roobert;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+}
+.inputBox fieldset {
+    border: none;
+}
+.nextBtn {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    padding: 15px 18px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFC629;
+    box-shadow: none;
+    text-transform: initial;
+    justify-content: center;
+    margin: 4px 0;
+    color: #000;
+}
+.nextBtn:disabled {
+    background: #E0E0E0;
+}

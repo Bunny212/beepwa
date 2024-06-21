@@ -1,0 +1,69 @@
+.root {
+    composes: gap-x-md from global;
+    composes: gap-y-xs from global;
+    composes: grid from global;
+}
+
+.errorText {
+    composes: leading-normal from global;
+    composes: mb-xs from global;
+    composes: text-error from global;
+}
+.itemsBox {
+    composes: gap-y-2xs from global;
+    composes: grid from global;
+    padding: 1rem;
+}
+.item {
+    composes: gap-x-2xs from global;
+    /* composes: gap-y-xs from global; */
+    composes: grid from global;
+    composes: items-start from global;
+    grid-template-areas: 'image details kebab';
+    grid-template-columns: 100px 1fr min-content;
+}
+.image {
+    composes: bg-subtle from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: h-full from global;
+    composes: object-contain from global;
+    composes: object-center from global;
+    composes: rounded-sm from global;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+    border: none;
+}
+.details {
+    composes: gap-2xs from global;
+    composes: leading-normal from global;
+
+    composes: sm_grid from global;
+    margin-left: -16px;
+}
+.desktopDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: -16px;
+}
+.name {
+    composes: font-semibold from global;
+    grid-area: name;
+    color: #000;
+    font-size: 14px;
+    font-family: Roobert;
+    font-style: normal;
+}
+.price {
+    composes: text-sm from global;
+    grid-area: price;
+    color: var(--black, #000);
+    font-size: 11px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 110%;
+}

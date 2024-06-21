@@ -1,0 +1,13 @@
+.root {
+    padding: 0;
+}
+
+@media (min-width: 960px) {
+    .root {
+        padding: 0;
+    }
+}
+
+.box {
+    margin: 0 0 20px;
+}

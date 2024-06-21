@@ -1,0 +1,139 @@
+.root {
+    composes: px-0 from global;
+    composes: py-xs from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-row from global;
+    composes: lg_items-start from global;
+    composes: lg_px-xs from global;
+    composes: lg_py-md from global;
+    padding: 0 !important;
+    background: transparent;
+}
+.section {
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: border-t-0 from global;
+    composes: border-r-0 from global;
+    composes: border-b from global;
+    composes: border-l-0 from global;
+    composes: my-0 from global;
+    composes: mx-sm from global;
+    composes: px-0 from global;
+    composes: py-xs from global;
+}
+.drawerAction {
+    padding: 0;
+    max-height: 53px;
+    line-height: 53px;
+}
+.drawerTitle {
+    color: #000;
+    font-size: 18px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+.dialog {
+    margin-top: 0%;
+}
+.dialogRichContent {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 4px;
+}
+.customRating {
+    font-size: 0.875rem;
+    color: #000000;
+}
+.produName {
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    display: inline-block;
+    font-family: inherit;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.prodLabel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px 2px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    top: 15px;
+    left: 10px;
+    z-index: 10;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+.priceContainer {
+    margin-top: -6px;
+}
+.priceText {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #000000;
+    font-family: inherit;
+}
+.robertFont {
+    font-family: inherit;
+}
+
+.cartContainer {
+    overflow: hidden;
+}
+  
+.cartInput {
+    position: relative;
+    transition: transform 300ms ease-in-out;
+}
+  
+.cartContainer.inCart .cartInput {
+    transform: translateX(0%);
+}
+  
+.cartContainer.inCart .cartInput .MuiButtonBase-root {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.cartInput .MuiButtonBase-root {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0ms 300ms, opacity 300ms;
+}  

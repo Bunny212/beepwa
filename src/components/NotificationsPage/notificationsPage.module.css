@@ -1,0 +1,95 @@
+.desktopRoot {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+}
+.root {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+}
+.listItemBtn {
+    border-radius: 12px !important;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    min-height: 70px;
+    margin-bottom: 10px !important;
+}
+.notificationTitle {
+    color: #000;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 750 !important;
+    line-height: 110% !important; /* 19.8px */
+    margin-bottom: 6px;
+}
+.notificationContent {
+    color: #000;
+    font-size: 13px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 110% !important; /* 14.3px */
+    margin-bottom: 6px;
+}
+.notificationImg {
+    border-radius: 6px;
+    max-width: 70px;
+    max-height: 70px;
+    aspect-ratio: 1/1;
+}
+.notificationIcon {
+    max-width: 25px;
+    max-height: 25px;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.notificationTimeAgo {
+    color: #828282;
+    font-family: Roobert;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+.fullBtn {
+    background: #FFC629;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    width: 100%;
+    color: #000000 !important;
+    text-transform: capitalize !important;
+    height: 36px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    max-width: 120px;
+    margin-top: 10px !important;
+}
+.fullBtn:hover {
+    background-color: #FFC629;
+}
+.notificationDivider {
+    /* margin: 10px 0 !important; */
+    list-style: none !important;
+}

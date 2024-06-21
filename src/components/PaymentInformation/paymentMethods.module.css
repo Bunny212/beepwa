@@ -1,0 +1,97 @@
+.root {
+    display: grid;
+}
+
+.root_disabled {
+    composes: root;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.radio_group {
+    display: grid;
+}
+
+.payment_method {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(var(--venia-global-color-border));
+}
+
+.payment_method:last-of-type {
+    border-bottom-width: 0;
+}
+
+.radio_label {
+    font-weight: 600;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.payment_errors {
+    display: grid;
+    gap: 0.5em;
+    color: rgb(var(--venia-global-color-error));
+}
+
+.agreements {
+    margin-top: 0.5rem;
+    display: grid;
+    gap: 0.5rem;
+}
+.heading_container {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-flow-col from global;
+}
+
+.heading {
+    composes: font-semibold from global;
+}
+
+.card_details_container {
+    composes: gap-2xs from global;
+    composes: grid from global;
+}
+
+.payment_details {
+}
+
+.methodTitle {
+    color:#000;
+    font-size: 14px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+.subMethodTitle, .subMethodTitle span {
+    color:#828282;
+    font-size: 11px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    padding-right: 3px;
+}
+.cardTitle {
+    composes: font-semibold from global;
+}
+.editButton {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: underline;
+}
+.editButton span {
+    display: block;
+}
+
+.editButtonText {
+    composes: hidden from global;
+
+    composes: lg_inline from global;
+}

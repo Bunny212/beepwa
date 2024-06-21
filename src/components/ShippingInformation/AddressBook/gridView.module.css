@@ -1,0 +1,65 @@
+.root {
+}
+
+.root_updated {
+    /* composes: root; */
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.content {
+    display: grid;
+    grid-gap: 0rem;
+}
+
+.btn {
+    width: fit-content;
+}
+.section {
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: border-t-0 from global;
+    composes: border-r-0 from global;
+    composes: border-b from global;
+    composes: border-l-0 from global;
+    composes: my-0 from global;
+    composes: mx-sm from global;
+    composes: px-0 from global;
+    composes: py-xs from global;
+}
+.heading {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.dialog {
+    margin-top: 0%;
+}
+.dialogContent {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 4px;
+}
+.logo {
+    height: var(--height);
+    width: var(--width);
+}

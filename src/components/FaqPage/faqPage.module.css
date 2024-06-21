@@ -1,0 +1,45 @@
+.root {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+}
+.listItemBtn {
+    border-radius: 12px !important;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    min-height: 70px;
+    margin-bottom: 10px !important;
+}
+.pageTitle {
+    color: #000;
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    margin-top: 0;
+}
+.iconBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 76.621px;
+    height: 78.189px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 10px;
+}

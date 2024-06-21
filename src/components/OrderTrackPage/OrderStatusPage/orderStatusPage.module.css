@@ -1,0 +1,190 @@
+/* prettier-ignore */
+.root {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr,1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+}
+
+.mainContainer {
+    composes: col-start-1 from global;
+    composes: grid from global;
+    composes: gap-y-xs from global;
+}
+
+.sidebarContainer {
+    composes: border-t from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: col-start-1 from global;
+
+    composes: lg_border-0 from global;
+    composes: lg_col-start-2 from global;
+}
+
+.header {
+    composes: font-semibold from global;
+}
+
+.text {
+    composes: leading-normal from global;
+}
+
+.orderNumber {
+    composes: header;
+}
+
+.shippingInfoHeading {
+    composes: header;
+}
+
+.shippingInfo {
+    composes: text;
+    composes: grid from global;
+}
+
+.shippingAddress {
+    composes: grid from global;
+}
+
+.shippingMethodHeading {
+    composes: header;
+}
+
+.shippingMethod {
+    composes: text;
+}
+
+.additionalText {
+    composes: text;
+}
+
+.deliveryStatusTitle {
+    composes: font-semibold from global;
+}
+
+.deliveryStatus {
+    padding: 1rem;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.deliverySupport {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    background: #FFC629;
+    box-shadow: none;
+    border: none;
+    display: none;
+}
+.estimationTime {
+    color: #181717;
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 17.5px */
+}
+.deliveryBtn {
+    border-radius: 12px;
+    border: 1px solid var(--bees-yellow, #FFC629);
+    background: var(--white, #FFF);
+    color: #000;
+    text-align: center;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: capitalize;
+    height: 46px;
+    padding: 15px 18px;
+    box-shadow: none;
+    margin-top: 10px;
+    width: 100%;
+}
+.orderSummary {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.orderSummaryTitle {
+    display: block;
+    color: #000;
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+}
+.orderSummaryContent {
+    display: block;
+    color: #181717;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 17.5px */
+    max-width: 210px;
+}
+.cardHeader {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-flow-col from global;
+    margin-bottom: 15px;
+}
+.cardTitle {
+    composes: font-semibold from global;
+}
+.editButton {
+    color: #000 !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 16px !important;
+    text-decoration: underline !important;
+    text-transform: capitalize !important;
+    padding: 0 !important;
+}
+.editButton span {
+    display: block;
+}
+.fullBtn {
+    background: #FF7A00 !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    width: 100%;
+    color: #000000 !important;
+    text-transform: capitalize !important;
+    height: 54px;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    justify-content: center;
+    padding: 15px 18px;
+}
+.fullBtn:hover {
+    background-color: #FF7A00;
+}
+.DeliveryLabel {
+    color: #181717;
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 4px;
+}

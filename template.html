@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="<%= global.LOCALE %>" data-image-optimizing-origin="<%= process.env.IMAGE_OPTIMIZING_ORIGIN %>" data-media-backend="<%= global.MAGENTO_MEDIA_BACKEND_URL %>">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmWv-32VTwgmywIuWTzlYkZZ0BIPYHHi0&libraries=places"></script> -->
+        <!-- <link rel="icon" type="image/x-icon" href="/my-static-assets/favicon.ico"> -->
+        <meta name="theme-color" content="#ffffff">
+        <!-- <link rel="manifest" href="/my-static-assets/manifest.json"> -->
+        <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> -->
+
+        <!--
+            Apple Specific Tags
+
+            To be included until Safari supports WebAppManifest
+            See Docs:
+            - https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+            - https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+        -->
+        <!--
+            Apple Icons for Homescreen
+            Sizes: https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/
+        -->
+        <!-- <link rel="apple-touch-icon" href="/my-static-assets/icons/bee_square_57.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/my-static-assets/icons/apple-touch-icon.png"> -->
+        <link rel="preconnect" href="<%= process.env.MAGENTO_BACKEND_URL %>">
+        <!--
+            This following CSS is a copy of the css returned by Google's font API that
+            allows us to "skip" a network round trip.
+
+            CSS requests are _render_ blocking, while font requests are only _text_
+            blocking. By removing the link request we only wait for font request, to
+            shave off a few ms :)
+
+            The CSS below this comment is the response copied wholesale from Google's font
+            API. If you ever need to update it, get the response and replace what is below
+            this comment. Remember to replace the preload link above with the src URL!
+
+            Example API responses:
+            https://fonts.googleapis.com/css?family=Muli:400&display=swap
+            https://fonts.googleapis.com/css?family=Source+Serif+Pro:600&display=swap
+        -->
+        <!-- <style type="text/css">
+            @font-face{
+                font-family:roobert;
+                font-style:normal;
+                font-weight:400;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertRegular.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:italic;
+                font-weight:400;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertRegularItalic.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:normal;
+                font-weight:300;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertLight.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:italic;
+                font-weight:300;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertLightItalic.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:normal;
+                font-weight:500;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertMedium.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:italic;
+                font-weight:500;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertMediumItalic.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:normal;
+                font-weight:600;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertSemiBold.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:italic;
+                font-weight:600;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertSemiBoldItalic.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:normal;
+                font-weight:700;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertBold.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:italic;
+                font-weight:700;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertBoldItalic.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:normal;
+                font-weight:900;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertHeavy.woff') format('woff')
+            }
+            @font-face{
+                font-family:roobert;
+                font-style:italic;
+                font-weight:900;
+                src:local('Roobert'),url('https://fonts.cdnfonts.com/s/29481/RoobertHeavyItalic.woff') format('woff')
+            }
+
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:400;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/Sukar Regular.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:400;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/SukarRegular.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:400;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/SukarRegular.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:700;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/Sukar Bold.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:700;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/SukarBold.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:700;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/SukarBold.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:900;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/Sukar Black.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:900;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/SukarBlack.woff') format('woff')}
+            @font-face{
+                font-family:sukar;
+                font-style:normal;
+                font-weight:900;
+                src:local('Sukar'),url('https://fonts.cdnfonts.com/s/29927/SukarBlack.woff') format('woff')}
+
+            @font-face {
+                font-family: "uicons-regular-rounded";
+                src: url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/webfonts/uicons-regular-rounded.eot#iefix") format("embedded-opentype"),
+                url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/webfonts/uicons-regular-rounded.woff2") format("woff2"),
+                url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/webfonts/uicons-regular-rounded.woff") format("woff");
+            }
+
+        </style> -->
+    </head>
+    <body class="bg-body font-sans text-base text-colorDefault">
+        <div id="root"></div>
+
+        <!-- Fallback for when JavaScript is disabled. -->
+        <noscript>
+            <style>
+                .fallback-nojs {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                }
+                .fallback-nojs a {
+                    color: currentColor;
+                }
+                .fallback-closed {
+                    height: 40vh;
+                }
+                .fallback-heading {
+                    font-family: 'Roobert';
+                    font-weight: 600;
+                    padding-bottom: 16px;
+                    font-size: xx-large;
+                }
+                .fallback-message {
+                    font-family: 'Roobert';
+                }
+                @media only screen and (max-width: 768px) {
+                  .fallback-heading {
+                    font-size: x-large;
+                  }
+                }
+            </style>
+            <div class="fallback-nojs">
+                <img class="fallback-closed" alt="JavaScript is disabled" src="/my-static-assets/veniaClosed.png">
+                <div class="fallback-heading">Oops! JavaScript is disabled</div>
+                <div class="fallback-message">
+                  To browse the Venia store,<br>
+                  <a href="https://www.enable-javascript.com">enable JavaScript in your browser.</a>
+                </div>
+            </div>
+        </noscript>
+        <!-- Inlined Data -->
+        {{#pageTypeNonce}}
+        <script nonce="{{pageTypeNonce}}">
+            try {
+                var INLINED_PAGE_TYPE = JSON.parse('{{pageType}}'.replace(/&quot;/g, '"'));
+            } catch(error) {}
+        </script>
+
+        {{#webpackChunks}}
+            <script type="text/javascript" src="/{{.}}"></script>
+        {{/webpackChunks}}
+        {{/pageTypeNonce}}
+        <!-- /Inlined Data -->
+    </body>
+</html>

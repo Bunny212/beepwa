@@ -1,0 +1,13 @@
+/* Styles for RTL */
+[dir="rtl"] * {
+    font-family: 'Sukar', sans-serif !important;
+    text-align: right;
+}
+
+[dir="rtl"] ::placeholder {
+    font-family: 'Sukar', sans-serif !important;
+}
+
+.flipRight {
+    transform: scaleX(-1);
+}

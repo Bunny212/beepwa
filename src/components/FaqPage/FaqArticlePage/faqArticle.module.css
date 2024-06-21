@@ -1,0 +1,32 @@
+.root {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: max-w-screen-lg from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_px-lg from global;
+    composes: lg_py-md from global;
+}
+.pageTitle {
+    color: #000;
+    font-family: Roobert;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    margin-top: 0;
+    text-transform: capitalize;
+}
+.richContent * {
+    color: #000;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+}

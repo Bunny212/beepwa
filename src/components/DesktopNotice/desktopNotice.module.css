@@ -1,0 +1,17 @@
+.root {
+    /* composes: gap-xs from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_py-md from global; */
+    padding-top: 0px;
+    height: 100vh;
+    background-image: url('../Images/webmaintenance.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}

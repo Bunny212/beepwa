@@ -1,0 +1,114 @@
+.root {
+    margin: 20px 0;
+}
+.swiperSlide {
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #F1F1F1;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 8px;
+    border-radius: 10.99px;
+    margin-bottom: 4px;
+}
+.sectionTitle {
+    color: #000;
+    font-size: 36px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 29.5px !important;
+    letter-spacing: -1.44px;
+    margin-bottom: 20px !important;
+    display: block;
+    max-width: 270px;
+}
+.catName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-decoration: none;
+}
+.roundImg {
+    background:#FFC629;
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+.roundImg img {
+    margin: 0;
+}
+.customRating {
+    font-size: 0.875rem;
+    color: #000000;
+}
+.produName {
+    color:#000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 109.091% */
+    text-transform: uppercase;
+}
+.imageContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    /* min-height: 320px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.prodLabel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px 2px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    top: 15px;
+    left: 10px;
+    z-index: 100;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5.495px;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+}
+.priceContainer {
+    margin-top: -6px;
+}
+.priceText {
+    color:#000;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 12px !important;
+}

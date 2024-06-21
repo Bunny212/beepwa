@@ -1,0 +1,89 @@
+.root {
+    composes: gap-y-2xs from global;
+    composes: grid from global;
+    composes: text-colorDefault from global;
+}
+.root_updated {
+    composes: root;
+    animation: flash var(--venia-global-anim-bounce) 640ms 2;
+}
+.address {
+    composes: gap-2xs from global;
+    composes: grid from global;
+    composes: pt-xs from global;
+    display: inline-block;
+    padding-top: 0;
+    color: #828282;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+}
+.address span {
+    padding-right: 2px;
+}
+.addressTitle {
+    color: #000;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+}
+.telephone {
+    color: #828282;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+}
+.deliveryNoteTitle {
+    color: #000;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    padding-right: 4px;
+}
+.deliveryNote {
+    color: #828282;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+}
+.cardHeader {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-flow-col from global;
+}
+.cardTitle {
+    composes: font-semibold from global;
+}
+.editButton {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: underline;
+}
+.editButton span {
+    display: block;
+}
+.defaultLabel {
+    background-color: #FFC629;
+    font-size: 10px;
+    height: 16px;
+    font-family: Roobert;
+    font-weight: 500;
+    color: #000;
+    display: none;
+}
+.defaultAvatar {
+    background-color: #FFC629 !important;
+    border-radius: 12px !important;
+}
+.normalAvatar {
+    background-color: #E0E0E0 !important;
+    border-radius: 12px !important;
+}

@@ -1,0 +1,37 @@
+.swiperSlide, .imageContainer, .image {
+    overflow: hidden;
+    border-radius: 6px;
+}
+.beeBullet {
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    background: #000;
+    box-shadow: none;
+    font-size: 0;
+    line-height: 1;
+    margin: 0 2px;
+    transition: width .3s ease-in-out;
+}
+.beeBulletActive {
+    width: 24px;
+    background: #fff;
+    opacity: 1;
+    transition: width .3s ease-in-out;
+}
+/* .imageContainer {
+    grid-area: 1 / 1 / 2 / 4;
+} */
+
+/* .currentImage {
+    composes: block from global;
+    composes: h-full from global;
+    composes: object-center from global;
+    composes: object-contain from global;
+    composes: w-full from global;
+
+    composes: lg_object-top from global;
+} */

@@ -1,0 +1,509 @@
+.root {
+    composes: px-0 from global;
+    composes: py-xs from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-row from global;
+    composes: lg_items-start from global;
+    composes: lg_px-xs from global;
+    composes: lg_py-md from global;
+    padding-top: 0;
+}
+
+@media (min-width: 960px) {
+    .root {
+        grid-template-areas:
+            'images title'
+            'images errors'
+            'images options'
+            'images quantity'
+            'images cart'
+            'images .';
+        grid-template-columns: minmax(0, 1.5625fr) minmax(0, 1fr);
+        grid-template-rows: repeat(5, min-content) 1fr [fold];
+    }
+
+    .title {
+        grid-template-columns: 1fr max-content;
+    }
+}
+
+.section {
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: border-t-0 from global;
+    composes: border-r-0 from global;
+    composes: border-b from global;
+    composes: border-l-0 from global;
+    composes: my-0 from global;
+    composes: mx-sm from global;
+    composes: px-0 from global;
+    composes: py-xs from global;
+}
+
+.sectionTitle {
+    composes: flex from global;
+    composes: font-semibold from global;
+    composes: items-center from global;
+    composes: leading-normal from global;
+    composes: mb-sm from global;
+    composes: text-colorDefault from global;
+}
+
+.title {
+    composes: section;
+    composes: gap-2 from global;
+    composes: grid from global;
+    composes: items-center from global;
+    composes: leading-normal from global;
+    composes: px-sm from global;
+    composes: py-xs from global;
+    grid-area: title;
+    border: none;
+}
+
+.productName {
+    composes: font-semibold from global;
+    composes: text-colorDefault from global;
+
+    composes: lg_font-normal from global;
+    composes: lg_text-xl from global;
+}
+
+.productPrice {
+    composes: block from global;
+    composes: mb-2 from global;
+}
+
+.imageCarousel {
+    grid-area: images;
+    grid-column: 1 / 2;
+    grid-row: 1 / fold;
+    composes: max-w-[640px] from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+
+    composes: lg_m-0 from global;
+    composes: lg_px-0 from global;
+    composes: lg_py-sm from global;
+}
+
+.options {
+    grid-area: options;
+}
+
+.formErrors {
+    composes: section;
+    grid-area: errors;
+}
+
+.quantity {
+    composes: section;
+    grid-area: quantity;
+}
+
+.quantityTitle {
+    composes: title from '@magento/venia-ui/lib/components/ProductOptions/option.module.css';
+}
+
+.actions {
+    composes: gap-y-sm from global;
+    composes: grid from global;
+    composes: items-center from global;
+    composes: justify-items-center from global;
+    composes: section;
+    grid-area: cart;
+
+    composes: lg_border-b-0 from global;
+}
+
+.description {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+}
+
+.descriptionTitle {
+    composes: sectionTitle;
+}
+
+.details {
+    composes: section;
+    grid-column: 2 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+}
+
+.detailsPageBuilder {
+    composes: my-0 from global;
+    composes: mx-sm from global;
+    composes: px-0 from global;
+    composes: py-sm from global;
+    grid-column: 1 / span 2;
+}
+
+.detailsPageBuilderList {
+    list-style: none;
+}
+
+@media (min-width: 1024px) {
+    .details {
+        align-self: stretch;
+        border-top-width: 1px;
+        margin: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.detailsTitle {
+    composes: sectionTitle;
+}
+
+.related {
+    composes: border-b-0 from global;
+    composes: section;
+    grid-column: 1 / span 2;
+}
+
+.relatedTitle {
+    composes: sectionTitle;
+}
+
+.quantityRoot {
+    composes: root from '../QuantityStepper/quantityStepper.module.css';
+    grid-template-columns: auto 4rem auto;
+    composes: justify-start from global;
+    border-radius: 12px;
+    border: 0.75px solid #000;
+}
+
+.unavailableContainer {
+    composes: bg-subtle from global;
+    composes: gap-x-2xs from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: italic from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: p-3 from global;
+    composes: text-subtle from global;
+    composes: w-full from global;
+}
+.actButton {
+    composes: mt-sm from global;
+    margin-top: 0;
+    border-radius: 12px;
+    width: 100%;
+}
+.ProductFullDetail-addToCartButton {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.tags {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    composes: mx-sm from global;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 0;
+}
+.tagsGrid {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.topPrice {
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 28px;
+}
+.chipContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0;
+}
+.chipContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.chipContainer::-webkit-scrollbar {
+    height: 8px,
+}
+.chip {
+    margin: 0 3px;
+    font-family: inherit;
+    border-width: 1.5px;
+    border-radius: 14px;
+    border-color: #000000;
+    height: 25px;
+    font-size: 11px;
+    font-weight: 650;
+    line-height: 16.5px;
+}
+.moreInfoChipContainer .chip {
+    margin: 0 6px 8px 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    border-width: 1.5px;
+    border-radius: 14px;
+    border-color: #000000;
+    font-size: 16px;
+    height: 34px;
+    line-height: 34px;
+}
+.heading2Line {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 31px !important;
+    line-height: 28px !important;
+    letter-spacing: -0.04em;
+    color: #000000;
+    max-width: 250px;
+    text-transform: uppercase;
+}
+.subTitle {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    color: #000000;
+}
+.subTitle2 {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 11px !important;
+    line-height: 12px !important;
+    color: #000000;
+}
+.subTitle3 {
+    font-style: normal;
+    font-weight: 650;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    font-family: inherit;
+}
+.customRating {
+    font-size: 0.875rem;
+    color: #4F4F4F !important;
+}
+.ratingVal {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    font-family: inherit;
+    margin-right: 5px;
+}
+.ratingNb {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000000;
+    font-family: inherit;
+    margin-left: 3px;
+}
+.informations {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    padding-bottom: 0;
+}
+.realResults {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    padding-top: 0;
+}
+.realResultsTitleContainer {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px 9px 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    border-radius: 12px 12px 0px 0px;
+    background: var(--bees-yellow, #FFC629);
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+.realResultsTitle {
+    color: var(--black, #000);
+    font-size: 24px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.5px;
+    letter-spacing: -0.24px;
+}
+.moreInformations {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.informationTitle {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+.richContent {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 4px;
+}
+.richContent p {
+    margin: 0;
+}
+.informationBox {
+    margin-bottom: 20px;
+}
+.dialog {
+    margin-top: 0%;
+}
+.dialogRichContent {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 4px;
+}
+.stickyCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 0 15px;
+}
+.btnPrice {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 1.2px;
+}
+
+.relatedUpSell {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+
+    composes: lg_border-t from global;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none;
+    padding-top: 0;
+}
+.tabBox {
+    border: none !important;
+}
+.tabs {
+    padding: 4px 6px;
+    background: #E0E0E0;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 30px;
+    align-items: center;
+    width: fit-content;
+    z-index: 0;
+}
+.tab {
+    border-radius: 30px !important;
+    text-transform: capitalize !important;
+    color: #000000 !important;
+    min-height: 35px !important;
+    max-height: 35px;
+    z-index: 1;
+}
+.prodLabel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px 2px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    top: 15px;
+    left: 10px;
+    z-index: 100;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+.logo {
+    height: var(--height);
+    width: var(--width);
+}

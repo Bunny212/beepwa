@@ -1,0 +1,47 @@
+.root {
+    composes: px-0 from global;
+    composes: py-xs from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-row from global;
+    composes: lg_items-start from global;
+    composes: lg_px-xs from global;
+    composes: lg_py-md from global;
+    padding: 0 !important;
+    background: transparent;
+}
+.section {
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: border-t-0 from global;
+    composes: border-r-0 from global;
+    composes: border-b from global;
+    composes: border-l-0 from global;
+    composes: my-0 from global;
+    composes: mx-sm from global;
+    composes: px-0 from global;
+    composes: py-xs from global;
+}
+.floatingCartBox {
+    composes: section;
+    grid-column: 1 / span 1;
+    grid-row: fold / span 1;
+    composes: lg_m-0 from global;
+    composes: lg_pl-sm from global;
+    composes: lg_pr-sm from global;
+    composes: lg_self-stretch from global;
+    border: none !important;
+    padding-top: 0;
+    display: flex;
+    height: 54px;
+    padding: 15px 18px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FF7A00;
+}
+.floatingCartItem {
+    text-align: center;
+    margin: 1rem;
+}

@@ -1,0 +1,133 @@
+.root {
+}
+
+.errorText {
+    composes: leading-normal from global;
+    composes: text-error from global;
+}
+
+.lineItems {
+    composes: gap-3 from global;
+    composes: grid from global;
+    composes: grid-cols-autoLast from global;
+    composes: leading-normal from global;
+}
+
+.lineItemLabel {
+    composes: justify-self-start from global;
+    composes: my-2 from global;
+}
+
+.price {
+    composes: justify-self-end from global;
+    composes: self-center from global;
+}
+
+.totalLabel {
+    composes: lineItemLabel;
+    composes: font-semibold from global;
+}
+
+.totalPrice {
+    composes: price;
+    composes: font-semibold from global;
+    flex: 1;
+    text-align: right;
+    color:#000;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 16px;
+}
+[dir="rtl"] .totalPrice {
+    text-align: left;
+}
+
+.priceUpdating {
+    composes: price;
+    composes: opacity-0 from global;
+    flex: 1;
+    text-align: right;
+    color:#000;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 16px;
+}
+
+.checkoutButton_container {
+    composes: items-center from global;
+    composes: inline-flex from global;
+    composes: justify-center from global;
+    composes: mt-xs from global;
+    composes: w-full from global;
+    composes: px-sm from global;
+    min-height: 5.5rem;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    /* margin-top: 0; */
+    background-color: #ffffff;
+}
+
+.fullBtn {
+    width: 100%;
+    height: 54px;
+    padding: 15px 18px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FF7A00;
+    text-transform: initial;
+    box-shadow: none;
+    color: #000000;
+}
+.fullBtn:hover {
+    background-color: #FF7A00;
+}
+.fullBtn > span:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemCount {
+    color: #000;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 16px;
+    text-align: left;
+    flex: 1;
+}
+[dir="rtl"] .itemCount {
+    text-align: right;
+}
+.checkoutBtnLabel {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    flex: 1;
+}
+[dir="rtl"] .checkoutBtnLabel {
+    font-size: 12px;
+}
+.loadingBtn {
+    width: 100%;
+    height: 54px;
+    padding: 15px 18px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FF7A00;
+    text-transform: initial;
+    box-shadow: none;
+    color: #000000;
+}
+.loadingBtn:disabled {
+    background: #E0E0E0;
+}

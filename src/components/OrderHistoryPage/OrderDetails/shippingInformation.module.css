@@ -1,0 +1,17 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-0 from global;
+}
+
+.heading {
+    composes: font-bold from global;
+    composes: pb-1.5 from global;
+}
+.name {
+    color: #000;
+    font-family: Roobert;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 109.091% */
+}

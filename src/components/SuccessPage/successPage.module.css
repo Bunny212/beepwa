@@ -1,0 +1,270 @@
+.root {
+    padding: 2.5rem 1.5rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.mainContainer_hidden {
+    display: none;
+}
+
+.heading {
+    color: rgb(var(--venia-global-color-text));
+    padding-bottom: 1rem;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+}
+
+.header {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.text {
+    line-height: 1.5em;
+}
+
+.orderNumber {
+    composes: text;
+}
+
+.orderNumber span {
+    font-weight: 600;
+}
+
+.additionalText {
+    composes: text;
+    margin-bottom: 1.5rem;
+}
+
+.message {
+    padding: 0.5rem;
+    border-left: 2px solid rgb(var(--venia-global-color-teal));
+    background: rgb(var(--venia-global-color-teal-light));
+    margin-bottom: 1rem;
+}
+
+.section {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sectionTitle {
+    font-size: 1rem;
+    composes: header;
+}
+
+.shippingAndPaymentInfo {
+    composes: section;
+    display: grid;
+    gap: 1rem;
+}
+
+.blockHeading {
+    composes: header;
+}
+
+.address,
+.sectionContent {
+    display: grid;
+}
+
+.delivery {
+    composes: address;
+}
+
+.itemsReview {
+    display: grid;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.items {
+    display: grid;
+    gap: 2rem;
+}
+
+.summary {
+    border: 2px solid rgb(var(--venia-global-color-gray-400));
+    border-radius: 0.375rem;
+    padding: 1.5rem 2rem;
+}
+
+.createAccountForm {
+    composes: summary;
+    max-width: 512px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.5rem;
+}
+.createAccountForm_hidden {
+    display: none;
+}
+
+.createAccountFormRoot {
+    position: static;
+}
+
+.createAccountFormRoot h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.createAccount {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    border-left: 2px solid rgb(var(--venia-global-color-teal));
+    display: grid;
+    gap: 0.5rem;
+    width: fit-content;
+}
+
+.createAccount button {
+    width: fit-content;
+}
+
+.itemsList {
+    display: grid;
+    padding: 1.5rem 2rem;
+}
+
+.toggleButton {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto min-content;
+    grid-gap: 0.25rem;
+    font-size: var(--venia-typography-body-S-fontSize);
+    max-width: fit-content;
+}
+
+@media (min-width: 640px) {
+    .shippingAndPaymentInfo {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .root {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .shippingAndPaymentInfo {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .itemsReview {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.deliveryStatusTitle {
+    composes: font-semibold from global;
+}
+
+.deliveryStatus {
+    padding: 1rem;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.deliverySupport {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    background: #FFC629;
+    box-shadow: none;
+    border: none;
+    display: none;
+}
+.estimationTime {
+    color: #181717;
+    font-family: Roobert;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 17.5px */
+}
+.deliveryBtn {
+    border-radius: 12px;
+    border: 1px solid var(--bees-yellow, #FFC629);
+    background: var(--white, #FFF);
+    color: #000;
+    text-align: center;
+    font-family: Roobert;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: capitalize;
+    height: 46px;
+    padding: 15px 18px;
+    box-shadow: none;
+    margin-top: 10px;
+    width: 100%;
+}
+.orderSummary {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.orderSummaryTitle {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+}
+.orderSummaryContent {
+    display: block;
+    color: #181717;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 17.5px */
+    max-width: 210px;
+}
+.cardHeader {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-flow-col from global;
+    margin-bottom: 15px;
+}
+.cardTitle {
+    composes: font-semibold from global;
+}
+.editButton {
+    color: #000 !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 16px !important;
+    text-decoration: underline !important;
+    text-transform: capitalize !important;
+    padding: 0 !important;
+}
+.editButton span {
+    display: block;
+}
+.fullBtn {
+    background: #FF7A00 !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    width: 100%;
+    color: #000000 !important;
+    text-transform: capitalize !important;
+    height: 54px;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    justify-content: center;
+    padding: 15px 18px;
+}
+.fullBtn:hover {
+    background-color: #FF7A00;
+}

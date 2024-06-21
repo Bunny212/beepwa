@@ -1,0 +1,95 @@
+.contents {
+    grid-template-rows: auto auto;
+    composes: gap-y-2xs from global;
+    composes: grid from global;
+    composes: mt-xs from global;
+    composes: text-left from global;
+}
+
+.cardHeader {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-flow-col from global;
+}
+.cardTitle {
+    composes: font-semibold from global;
+}
+.editButton {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: underline;
+}
+.editButton span {
+    display: block;
+}
+
+.editButtonText {
+    composes: hidden from global;
+
+    composes: lg_inline from global;
+}
+
+.editIcon {
+    composes: stroke-brand-base from global;
+}
+
+.error {
+    composes: leading-normal from global;
+    composes: self-center from global;
+    composes: text-error from global;
+}
+
+.free {
+    composes: uppercase from global;
+}
+
+.heading {
+    composes: font-semibold from global;
+}
+
+.titleContainer {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-flow-col from global;
+}
+.methodTitle {
+    color:#000;
+    font-size: 14px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    margin-bottom: 6px;
+}
+.subMethodTitle, .subMethodTitle span {
+    color:#828282;
+    font-size: 11px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    padding-right: 3px;
+}
+[dir="rtl"] .subMethodTitle, [dir="rtl"] .subMethodTitle span {
+    padding-left: 3px;
+}
+.subMethodTitleMsg {
+    color:#000;
+    font-size: 10px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    padding-right: 3px;
+}
+.subMethodPrice {
+    color:#000;
+    font-size: 12px;
+    font-family: Roobert;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+}

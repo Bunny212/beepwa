@@ -1,0 +1,10 @@
+.root {
+    margin-bottom: 15px;
+}
+
+.errorMessage {
+    composes: font-semibold from global;
+    composes: leading-normal from global;
+    composes: text-error from global;
+    composes: text-sm from global;
+}

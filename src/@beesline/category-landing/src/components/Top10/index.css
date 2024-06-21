@@ -1,0 +1,207 @@
+.root {
+    padding: 10px;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.3s ease-in-out;
+}
+.flexBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    text-transform: capitalize;
+}
+.heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+    font-family: inherit;
+    letter-spacing: -0.04em;
+}
+.heading2Line {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 22px !important;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+.subTitle {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    color: #000000;
+}
+.numericTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 110%;
+    color: #000000;
+    font-family: inherit;
+}
+.hashNb {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 54px !important;
+    line-height: 110% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    color: #AFAFAF !important;
+    padding: 0 !important;
+    margin-right: 10px !important;
+}
+.hashNb span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+}
+.subTitle2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 12px;
+    color: #000000;
+    font-family: inherit;
+}
+.customRating {
+    font-size: 0.875rem;
+    color: #4F4F4F !important;
+}
+.ratingVal {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    font-family: inherit;
+    margin-right: 5px;
+}
+.ratingNb {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000000;
+    font-family: inherit;
+    margin-left: 3px;
+}
+.chipContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.chipContainer::-webkit-scrollbar-thumb {
+    border-radius: 4;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.chipContainer::-webkit-scrollbar {
+    height: 8,
+}
+.chip {
+    margin: 0 4px;
+}
+.categoryTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.customRating {
+    font-size: 0.875rem;
+    color: #000000;
+}
+.produName {
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    display: inline-block;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.prodLabel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px 2px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    top: 15px;
+    left: 10px;
+    z-index: 100;
+    color: #000000;
+    text-transform: uppercase;
+}
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+.priceContainer {
+    margin-top: -6px;
+}
+.priceText {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #000000;
+}
+
+.cartContainer {
+    overflow: hidden;
+}
+  
+.cartInput {
+    position: relative;
+    transition: transform 300ms ease-in-out;
+}
+  
+.cartContainer.inCart .cartInput {
+    transform: translateX(0%);
+}
+  
+.cartContainer.inCart .cartInput .MuiButtonBase-root {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.cartInput .MuiButtonBase-root {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0ms 300ms, opacity 300ms;
+}

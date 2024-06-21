@@ -1,0 +1,111 @@
+.phoneBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-color: transparent !important;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.phoneLabel {
+    color: #828282;
+    font-family: Roobert;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    height: 55px !important;
+    line-height: 55px;
+    border-radius: 9.104px !important;
+    background: #FFF !important;
+    box-shadow: 0px 0px 12.139005661010742px 0px rgba(0, 0, 0, 0.12) !important;
+    overflow: hidden;
+    padding: 0px 10px !important;
+    margin-right: 10px;
+    cursor: pointer;
+    min-width: 70px;
+    text-align: center;
+}
+
+.phonelabledisabled {
+    color: #828282;
+    font-family: Roobert;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    height: 55px !important;
+    line-height: 55px;
+    border-radius: 9.104px !important;
+    background: #FFF !important;
+    box-shadow: 0px 0px 12.139005661010742px 0px rgba(0, 0, 0, 0.12) !important;
+    overflow: hidden;
+    padding: 0px 10px !important;
+    margin-right: 10px;
+    cursor: default;
+    min-width: 70px;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0.8;
+}
+[dir="rtl"] .phonelabledisabled {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.phoneBox input {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    border-radius: 0 !important;
+    color: #000;
+    font-family: Roobert;
+    font-size: 11px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    height: 55px !important;
+    flex: 1;
+    border-radius: 9.104px !important;
+    background: #FFF !important;
+    box-shadow: 0px 0px 12.139005661010742px 0px rgba(0, 0, 0, 0.12) !important;
+    overflow: hidden;
+    display: flex !important;
+    padding: 0px 10px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 9.863px !important;
+}
+.phoneBox input:disabled {
+    opacity: 0.8;
+    color: #828282;
+}
+.errorText {
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    text-align: left;
+    margin-top: -8px;
+    margin-right: 14px;
+    margin-bottom: 0;
+    margin-left: 14px;
+    margin: 5px 0 0;
+}
+[dir="rtl"] .errorText {
+    text-align: right;
+}
+.PhoneInputCountryIcon--border {
+    border-radius: 2px;
+    overflow: hidden;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+.react-international-phone-input-container,
+.react-international-phone-input {
+    width: 100%;
+}
+.react-international-phone-country-selector,
+.react-international-phone-dial-code-preview {
+    display: none;
+}

@@ -1,0 +1,25 @@
+.desktopRoot {
+    composes: gap-xs from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_py-md from global;
+    padding-top: 0px;
+}
+.root {
+    composes: gap-xs from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: px-sm from global;
+    composes: py-sm from global;
+
+    composes: lg_gap-md from global;
+    /* TODO @TW: review (B7) */
+    composes: lg_grid-cols-[2fr, 1fr] from global;
+    composes: lg_py-md from global;
+    padding-top: 0px;
+}

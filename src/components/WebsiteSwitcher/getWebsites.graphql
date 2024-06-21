@@ -1,0 +1,8 @@
+# src/components/WebsiteSwitcher/getWebsites.graphql
+query GetWebsites {
+  websites {
+    id
+    code
+    name
+  }
+}
